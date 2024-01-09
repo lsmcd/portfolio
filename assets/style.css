@@ -1,0 +1,192 @@
+:root {
+    --c1: #011C40; 
+    --c2: #0378A6; 
+    --c3: #04B2D9;
+    --c4: #04D9B2;
+    --c5: #04D98B;
+}
+/* Color Theme Swatches in Hex */
+.Green-and-Blue-Neon-Light-with-Tropical-Leaves-1-hex { color: #011C40; }
+.Green-and-Blue-Neon-Light-with-Tropical-Leaves-2-hex { color: #0378A6; }
+.Green-and-Blue-Neon-Light-with-Tropical-Leaves-3-hex { color: #04B2D9; }
+.Green-and-Blue-Neon-Light-with-Tropical-Leaves-4-hex { color: #04D9B2; }
+.Green-and-Blue-Neon-Light-with-Tropical-Leaves-5-hex { color: #04D98B; }
+
+/* Color Theme Swatches in RGBA */
+.Green-and-Blue-Neon-Light-with-Tropical-Leaves-1-rgba { color: rgba(1, 28, 63, 1); }
+.Green-and-Blue-Neon-Light-with-Tropical-Leaves-2-rgba { color: rgba(3, 119, 165, 1); }
+.Green-and-Blue-Neon-Light-with-Tropical-Leaves-3-rgba { color: rgba(4, 177, 216, 1); }
+.Green-and-Blue-Neon-Light-with-Tropical-Leaves-4-rgba { color: rgba(4, 216, 177, 1); }
+.Green-and-Blue-Neon-Light-with-Tropical-Leaves-5-rgba { color: rgba(4, 216, 138, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Green-and-Blue-Neon-Light-with-Tropical-Leaves-1-hsla { color: hsla(213, 96, 12, 1); }
+.Green-and-Blue-Neon-Light-with-Tropical-Leaves-2-hsla { color: hsla(196, 96, 33, 1); }
+.Green-and-Blue-Neon-Light-with-Tropical-Leaves-3-hsla { color: hsla(191, 96, 43, 1); }
+.Green-and-Blue-Neon-Light-with-Tropical-Leaves-4-hsla { color: hsla(168, 96, 43, 1); }
+.Green-and-Blue-Neon-Light-with-Tropical-Leaves-5-hsla { color: hsla(157, 96, 43, 1); }
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--c5)
+}
+header {
+    width: 100%;
+    display: inline-flex;
+    color: var(--c1);
+    background-color: var(--c3);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+}
+button {
+    display: none;
+}
+nav {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 79.67px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+h1 {
+    display: initial;
+    margin-right: 50%;
+    white-space: nowrap;
+}
+h2 {
+    display: inline-block;
+    text-align: right;
+}
+h3 {
+    display: initial;
+    padding-inline: 10px;
+    font-size: 24px;
+    text-decoration: underline;
+}
+p {
+    margin-left: 4%;
+    margin-right: 4%;
+    float: left;
+    text-align: justify;
+    position: relative;
+    top: 0;
+}
+a {
+    color: var(--c1);
+}
+a#about{
+    position: relative;
+    top: -100px;
+}
+a#work{
+    position: relative;
+    top: 10px;
+}
+a#contact{
+    position: relative;
+    top: 20px;
+}
+h2#about {
+    margin-bottom: 6%;
+}
+h2#work {
+    margin-bottom: 64%;
+}
+header img {
+    height: 54px;
+    width: 54px;
+    margin-block: 13px;
+    margin-inline: 13px;
+}
+img.mainwebsite {
+    display: block;
+    width: 94%;
+    margin-inline: 3%;
+    margin-bottom: 3%;
+}
+img.otherwebsites {
+    width: 44%;
+    margin-inline: 3%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.content {
+    float: right;
+    width: 74%;
+    border-width: 0px;
+    border-left: 5px;
+    border-color: var(--c3);
+    border-style: solid;
+    margin-bottom: 3%;
+    color: var(--c1);
+}
+.flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+.headers {
+    display: block;
+    width: 23%;
+    float: left;
+    margin-right: 2%;
+    color: var(--c1);
+}
+h3.email {
+    text-decoration: none;
+}
+/*check if using a mobile device or narrow viewport*/
+@media screen and (max-width: 45rem){
+    /*responsive code*/
+    h2.headers{
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-width: 0;
+        border-bottom: 5px;
+        border-color: var(--c1);
+        border-style: solid; 
+    }
+    h3 {
+        font-size: 20px;
+    }
+    footer h3 {
+        font-size: 14px;
+    }
+    .content {
+        width: 100%;
+        border-left: 0px;
+    }
+    h2.headers#work{
+        margin-bottom: 19.92px;
+    }
+    h2.headers#about{
+        margin-top: 55px;
+        margin-bottom: 19.92px;
+    }
+    h2.headers#contact{
+        margin-bottom: 19.92px;
+    }
+    nav{
+        width: 100%;
+        top: 20px;
+        background-color: var(--c3);
+        z-index: -1;
+    }
+    h1{
+        font-size: 14px;
+    }
+    a#work{
+        position: relative;
+        top: 150px;
+    }
+}
